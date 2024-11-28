@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .flex-container {
+            display: flex;
+            justify-content: center;      /* Horizonate Axe */
+            align-items: center;          /* Vertikale Axe */
+            flex-wrap: wrap-reverse;
+            height: 75vh;
+            border: 1px solid black;
+        }
+
+        .flex-item{
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            font-size: 8em;
+        }
+
+        #item1{
+            background-color: blueviolet;
+            align-self: center;
+        }
+
+        #item2{
+            background-color: salmon;
+        }
+
+        #item3{
+            background-color: blanchedalmond;
+        }
+
+        #item4{
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+
+        <div class="flex-item" id="item1">1</div>
+        <div class="flex-item" id="item2">2</div>
+        <div class="flex-item" id="item3">3</div>
+        <div class="flex-item" id="item4">4</div>
+        <div class="flex-item" id="item1">1</div>
+        <div class="flex-item" id="item2">2</div>
+        <div class="flex-item" id="item3">3</div>
+        <div class="flex-item" id="item4">4</div>
+
+    </div>
+    
+</body>
+</html>

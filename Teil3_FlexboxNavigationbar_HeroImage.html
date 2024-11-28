@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Encode Sans SC', sans-serif;
+        }
+
+/****** Navigation Bar ****************************************************/
+        header {
+            display: flex;
+            justify-content: space-between;     /* Horizonale Zentrierung */
+            align-items: center;                /* Vertikale Zentrierung */
+            background-color: rgb(17, 17, 27);
+            color: antiquewhite;
+            height: 10vh;
+            padding: 20px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+
+/****** Hero Image Section ****************************************************/
+        .hero-image{
+            height: 90vh;
+            color: antiquewhite;
+
+            /* Bonus -> Hintergrundbild */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("schaufenster.jpg");
+            background-position: center;
+            background-size: cover;
+            
+            /* Flexbox Einstellungen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .hero-image h1{
+            font-size: 50px;
+        }
+        .hero-image p{
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Navigation Bar-->
+    <header>
+        <div class="logo">
+            <h1>SuperCode</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bootcamps</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero-image">
+        <h1>Willkommen bei No3</h1>
+        <p> Unser Online-Schaufenster ist 24/7 für euch da</p>
+    </section>
+
+</body>
+</html>
